@@ -51,7 +51,7 @@ void cbModelStates(const gazebo_msgs::ModelStates::ConstPtr& msg)
 
 // cbMyOdom：この関数に自分のオドメトリを実装しよう！
 // /joint_statesトピックから左右のjoint(車輪回転軸)の位置（回転角度)[rad]を表示
-// 参考：Turtlebot3の車輪直径0.066 [m]
+// 参考：Roombaの車輪直径0.078 [m]
 void cbMyOdom(const sensor_msgs::JointState::ConstPtr& jointstate)
 {
   double wheel_right_joint_pos = jointstate->position[0]; // 右車軸の位置[rad]
