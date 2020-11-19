@@ -26,7 +26,7 @@
 	</group>
 
 	<!-- Spawn robot/s -->
-	<include file="$(find ca_gazebo)/launch/spawn_multirobot.launch">
+	<include file="$(find ca_gazebo)/launch/include/spawn_multirobot.launch">
     <arg name="env"          value="$(arg env)"/>
 	</include>
 
